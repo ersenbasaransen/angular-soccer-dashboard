@@ -9,6 +9,7 @@ import { StandingsComponent } from './standings/standings.component';
 import { ScoringComponent } from './scoring/scoring.component';
 import { MessagesComponent } from './messages/messages.component';
 import { VisitorIpComponent } from './visitor-ip/visitor-ip.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { VisitorIpComponent } from './visitor-ip/visitor-ip.component';
     StandingsComponent,
     ScoringComponent,
     MessagesComponent,
-    VisitorIpComponent
+    VisitorIpComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
