@@ -1,0 +1,19 @@
+h3 {
+    text-align:center;
+    color:navy;
+    font-size:x-large;
+    margin:0px;
+  }
+  
+  table {
+    width:92%;
+    margin:1em auto;
+    font-size:large;
+    font-family:"Comic Sans MS",
+    cursive, sans-serif;
+  }
+  
+  th {
+    text-decoration:underline;
+  }
+  
