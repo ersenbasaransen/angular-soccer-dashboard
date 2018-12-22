@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { SEASON_SCHEDULE, TEAMS } from "./schedule-data";
 import { of } from "rxjs";
+import { MessageService } from './message.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SoccerService {
 
-  constructor() { }
+  constructor(private messageService : MessageService) { }
 
   /**
    * using Promise
@@ -20,6 +21,7 @@ export class SoccerService {
    * using RxJs Observables
    */
   getScheduleAsnyc() : any {  /*Observable<ISchedule[]> çalışmıyor neden?*/
+    this.messageService.add(`SoccerService: fetched schedule`);
     return of(SEASON_SCHEDULE);
   }
 
@@ -32,6 +34,7 @@ export class SoccerService {
   }
 
   getTeams() : any {
+    this.messageService.add(`SoccerService: fetched teams`);
     return TEAMS;
   }  
 }
